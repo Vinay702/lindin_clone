@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Poppins:wght@400;500;700&family=Proza+Libre:ital,wght@1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Signika+Negative:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="h-[500vh]">
+    <div class="outer-container bg-[#F3F2EF]">
+      <div
+        class="nav-container flex justify-between md:justify-start py-3 px-1 md:px-1 md:py-3 md:overflow-hidden h-[60px] bg-[#FFFFFF] shadow-sm sticky top-0"
+      >
+        <div class="navv-1 md:flex md:px-24px md:pl-[114px] md:pr-[150px]">
+          <div class="logo-nav px-[5px]">
+            <img src="./img/logoblue.svg" class="w-[35px] h-[35px]" alt="" />
+          </div>
+          <div
+            class="hidden search-bar md:flex md:bg-[#EEF3F8] md:rounded-md md:h-[34px] md:w-[280px]"
+          >
+            <img
+              src="img/searchNav.svg"
+              class="h-[30px] w-[30px] p-1 m-1"
+              alt=""
+            />
+            <input
+              type="text"
+              class="md:h-[34px] md:rounded-md md:bg-[#EEF3F8]"
+              placeholder="Search"
+            />
+          </div>
+        </div>
+
+        <div class="search md:hidden">
+          <img src="./img/searchNav.svg" class="" alt="" />
+        </div>
+
+        <div class="mynet-nav md:w-[80px]">
+          <img src="img/home.svg" class="" alt="" />
+          <p class="hidden md:text-xs md:text-center md:inline">Home</p>
+        </div>
+        <div class="mynet-nav md:w-[80px]">
+          <img src="img/myNetwork.svg" class="md:pl-[17px]" alt="" />
+          <p class="hidden md:text-xs md:object-none md:text-center md:inline">
+            My Network
+          </p>
+        </div>
+        <div class="jobs-nav md:w-[80px]">
+          <img src="img/jobs.svg" class="md:pl-[17px]" alt="" />
+          <p class="hidden md:text-xs md:text-center md:inline md:pl-[15px]">
+            Jobs
+          </p>
+        </div>
+        <div class="mess-nav md:w-[80px]">
+          <img src="img/messaging.svg" class="md:pl-[15px]" alt="" />
+          <p class="hidden md:inline md:text-center md:text-sm">Messaging</p>
+        </div>
+        <div class="noti-nav md:w-[80px]">
+          <img src="img/notification.svg" class="md:pl-[16px]" alt="" />
+          <p class="hidden md:inline md:text-center md:text-sm">Notification</p>
+        </div>
+        <div class="three-nav md:hidden">
+          <img src="img/threedot.svg" class="h-[24px] w-[24px]" alt="" />
+        </div>
+        <div class="hidden md:inline noti-nav md:w-[80px] md:pl-[15px]">
+          <img src="img/me.png" class="w-[24px] h-[24px] rounded-full" alt="" />
+          <p class="hidden md:inline md:text-center md:text-sm">Me</p>
+        </div>
+
+        <div class="last flex md:pl-[40px]">
+          <div class="noti-nav hidden md:inline">
+            <img src="img/work.svg" class="" alt="" />
+            <p class="md:text-sm">Work</p>
+          </div>
+          <div class="try flex flex-col items-center md:pl-[20px]">
+            <a
+              href="#"
+              class="hidden md:inline underline text-[#915907] text-sm"
+              >Try premium for free</a
+            >
+          </div>
+        </div>
+      </div>
+      <!---Main                                     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+      <div class="main-1 md:hidden mt-2.5 flex-col shadow-md">
+        <div class="div-1 bg-[#A0B4B7] h-[53px] w-[full]">
+          <div class="div-3 pl-40 pt-5">
+            <img
+              src="./img/vinay.png"
+              class="w-[70px] h-[70px] items-center rounded-full border-2 border-[#FFFFFF]"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="div-2 bg-[#FFFFFF]">
+          <p class="pt-14 pl-40">Vinay B H</p>
+          <p
+            class="cursor-pointer hover:underline text-xs text-opacity-10 font-light py-2 pl-[98px]"
+          >
+            Student at SSMRV Degree College
+          </p>
+        </div>
+      </div>
+      <div class="main-2 h-[20x] p-1.5 md:hidden">
+        <p class="text-center text-sm text-opacity-50">Show More</p>
+      </div>
+
+      <div class="main-3 bg-[#FFFFFF] md:hidden m-1 pt-2 shadow-md">
+        <div class="sub-main-1 flex">
+          <div class="img p-2.5 w-[80px]">
+            <img
+              src="./img/vinay.png"
+              class="w-[47px] h-[47px] rounded-full"
+              alt=""
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Start a post"
+            class="border rounded-3xl border-[#B2B2B2] shadow-md my-2 block pl-2.5 pr-20 text-sm"
+          />
+        </div>
+        <div class="sub-main-2 flex justify-between mx-1 py-4 px-1">
+          <div-img-1 class="flex justify-between">
+            <img src="./img/photo.svg" alt="" />
+            <p>Photo</p>
+          </div-img-1>
+          <div class="div-img-2 flex">
+            <img src="./img/video.svg" alt="" />
+            <p>Video</p>
+          </div>
+          <div class="div-image-3 flex">
+            <img src="./img/eventsNav2.svg" alt="" />
+            <p>Event</p>
+          </div>
+          <div class="div-img-4 flex">
+            <img src="./img/writeArticle.svg" alt="" />
+            <p>Write article</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="md:hidden inline-flex items-center justify-center w-full my-1"
+      >
+        <hr class="w-72 mx-2 h-px bg-gray-200 border-0 dark:bg-[#BFBEBB]" />
+        <span class="text-xs text-opacity-5"
+          >Sort By: <span class="text-xs font-semibold">Top</span></span
+        >
+      </div>
+      <!-----------------------Main   part------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="post-1 bg-[#FFFFFF] md:hidden my-2">
+        <div class="sub-1 flex justify-between py-3 px-4">
+          <div class="sub-11 flex">
+            <img src="./img/rv.png" class="w-[50px] h-[50px]" alt="" />
+            <div class="sub-111 px-2">
+              <p class="text-sm font-medium">SSMRV Degree College</p>
+              <p class="text-xs text-opacity-5">4,500 followers</p>
+              <p class="text-xs">4d</p>
+            </div>
+          </div>
+          <div class="sub-12 flex">
+            <div class="sub-121 pr-1">
+              <img src="./img/threedot.svg" class="w-[20px] h-[20px]" alt="" />
+            </div>
+            <div class="sub-122 pl-1">
+              <img src="./img/wrong.svg" class="w-[17px] h-[17px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="sub-2 px-3 pb-1">
+          <p class="text-sm text-opacity-50">
+            At the conclusion of this
+            <span class="text-[#0A66C2] font-semibold"
+              >#NationalProductivityWeek,</span
+            >
+            as we celebrate India's G-20 Presidency, let us all work together to
+            encourage & adopt
+            <a href="#" class="text-xs hover:text-blue-500 cursor-pointer"
+              >…see more</a
+            >
+          </p>
+        </div>
+        <div class="sub-3">
+          <img src="./img/rv-post.png" class="w-full h-[500px]" alt="" />
+          <div class="sub-131 p-3 flex">
+            <img src="./img/likeblue.svg" class="pr-1" alt="" />
+            <p class="text-xs">600</p>
+          </div>
+        </div>
+        <div>
+          <hr class="mx-3" />
+        </div>
+        <div class="sub-4 flex justify-between px-9 py-3">
+          <img src="./img/like.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/comment.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/repost.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/send.svg" class="w-[25px] h-[25px]" alt="" />
+        </div>
+      </div>
+
+      <div class="post-1 bg-[#FFFFFF] md:hidden my-2">
+        <div class="sub-001 flex p-3 justify-between">
+          <div class="div-001 flex">
+            <img
+              src="./img/putta.png"
+              class="w-[23px] h-[23px] rounded-full"
+              alt=""
+            />
+            <p class="pl-1 pt-1 text-xs font-medium">
+              Bhumi Y <span class="text-xs font-light">likes this.</span>
+            </p>
+          </div>
+          <div class="sub-12 flex">
+            <div class="sub-121 pr-1">
+              <img src="./img/threedot.svg" class="w-[20px] h-[20px]" alt="" />
+            </div>
+            <div class="sub-122 pl-1">
+              <img src="./img/wrong.svg" class="w-[17px] h-[17px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="sub-01">
+          <hr class="mx-3" />
+        </div>
+        <div class="sub-1 flex justify-between py-3 px-4">
+          <div class="sub-11 flex justify-between">
+            <div class="sub-1-1 flex">
+              <img
+                src="./img/disha.png"
+                class="w-[44px] h-[44px] rounded-full"
+                alt=""
+              />
+              <div class="sub-111 px-2">
+                <p class="text-sm font-medium">Disha Skula</p>
+                <p class="text-xs text-opacity-5">96,000+ followers</p>
+                <p class="text-xs">3d</p>
+              </div>
+            </div>
+            <div class="sub-1-2 pl-32">
+              <p class="text-[#1D72C7] font-medium">+ Follow</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub-2 px-3">
+          <p class="text-sm text-opacity-50">Thougths?</p>
+        </div>
+        <div class="sub-3">
+          <img src="./img/disa-post.png" class="w-full h-[400px]" alt="" />
+          <div class="sub-131 p-3 flex">
+            <img src="./img/likeblue.svg" class="pr-1" alt="" />
+            <p class="text-xs">11,000</p>
+          </div>
+        </div>
+        <div>
+          <hr class="mx-3" />
+        </div>
+        <div class="sub-4 flex justify-between px-9 py-3">
+          <img src="./img/like.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/comment.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/repost.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/send.svg" class="w-[25px] h-[25px]" alt="" />
+        </div>
+      </div>
+      <div class="post-1 bg-[#FFFFFF] md:hidden my-2">
+        <div class="sub-1 flex justify-between py-3 px-4">
+          <div class="sub-11 flex">
+            <img src="./img/rv.png" class="w-[50px] h-[50px]" alt="" />
+            <div class="sub-111 px-2">
+              <p class="text-sm font-medium">SSMRV Degree College</p>
+              <p class="text-xs text-opacity-5">4,500 followers</p>
+              <p class="text-xs">4d</p>
+            </div>
+          </div>
+          <div class="sub-12 flex">
+            <div class="sub-121 pr-1">
+              <img src="./img/threedot.svg" class="w-[20px] h-[20px]" alt="" />
+            </div>
+            <div class="sub-122 pl-1">
+              <img src="./img/wrong.svg" class="w-[17px] h-[17px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="sub-2 px-3 pb-1">
+          <p class="text-sm text-opacity-50">
+            At the conclusion of this
+            <span class="text-[#0A66C2] font-semibold"
+              >#NationalProductivityWeek,</span
+            >
+            as we celebrate India's G-20 Presidency, let us all work together to
+            encourage & adopt
+            <a href="#" class="text-xs hover:text-blue-500 cursor-pointer"
+              >…see more</a
+            >
+          </p>
+        </div>
+        <div class="sub-3">
+          <img src="./img/rv-post.png" class="w-full h-[500px]" alt="" />
+          <div class="sub-131 p-3 flex">
+            <img src="./img/likeblue.svg" class="pr-1" alt="" />
+            <p class="text-xs">600</p>
+          </div>
+        </div>
+        <div>
+          <hr class="mx-3" />
+        </div>
+        <div class="sub-4 flex justify-between px-9 py-3">
+          <img src="./img/like.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/comment.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/repost.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/send.svg" class="w-[25px] h-[25px]" alt="" />
+        </div>
+      </div>
+      <div class="post-1 bg-[#FFFFFF] md:hidden my-2">
+        <div class="sub-001 flex p-3 justify-between">
+          <div class="div-001 flex">
+            <img
+              src="./img/putta.png"
+              class="w-[23px] h-[23px] rounded-full"
+              alt=""
+            />
+            <p class="pl-1 pt-1 text-xs font-medium">
+              Bhumi Y <span class="text-xs font-light">likes this.</span>
+            </p>
+          </div>
+          <div class="sub-12 flex">
+            <div class="sub-121 pr-1">
+              <img src="./img/threedot.svg" class="w-[20px] h-[20px]" alt="" />
+            </div>
+            <div class="sub-122 pl-1">
+              <img src="./img/wrong.svg" class="w-[17px] h-[17px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="sub-01">
+          <hr class="mx-3" />
+        </div>
+        <div class="sub-1 flex justify-between py-3 px-4">
+          <div class="sub-11 flex justify-between">
+            <div class="sub-1-1 flex">
+              <img
+                src="./img/disha.png"
+                class="w-[44px] h-[44px] rounded-full"
+                alt=""
+              />
+              <div class="sub-111 px-2">
+                <p class="text-sm font-medium">Disha Skula</p>
+                <p class="text-xs text-opacity-5">96,000+ followers</p>
+                <p class="text-xs">3d</p>
+              </div>
+            </div>
+            <div class="sub-1-2 pl-32">
+              <p class="text-[#1D72C7] font-medium">+ Follow</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub-2 px-3">
+          <p class="text-sm text-opacity-50">Thougths?</p>
+        </div>
+        <div class="sub-3">
+          <img src="./img/disa-post.png" class="w-full h-[400px]" alt="" />
+          <div class="sub-131 p-3 flex">
+            <img src="./img/likeblue.svg" class="pr-1" alt="" />
+            <p class="text-xs">11,000</p>
+          </div>
+        </div>
+        <div>
+          <hr class="mx-3" />
+        </div>
+        <div class="sub-4 flex justify-between px-9 py-3">
+          <img src="./img/like.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/comment.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/repost.svg" class="w-[25px] h-[25px]" alt="" />
+          <img src="./img/send.svg" class="w-[25px] h-[25px]" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
